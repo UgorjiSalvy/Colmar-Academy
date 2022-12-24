@@ -1,0 +1,332 @@
+/* Reset */
+html{
+    box-sizing: border-box;
+}
+*::after, *::before{
+    box-sizing: inherit;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Main styles */
+.mobile{
+    display: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    position: fixed;
+    z-index: 50000000000;
+    background-color: white;
+    border: 2px solid gray;
+    width: 100%;
+}
+.not-mobile {
+    display: flex;
+    height: 32px;
+    align-items: center;
+    margin-left: 24px;
+}
+.not-mobile img{
+    height: 32px;
+}
+.not-mobile span{
+    color: gray;
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+header li{
+    margin-right: 16px;
+}
+header li:last-child{
+    margin-right: 24px;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+/* Styling for the "Learn something new everyday" Section */
+.background {
+    top: 60px;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    background-color: rgba(189, 189, 189, 0.792);
+}
+.background h2 {
+    text-align: left;
+    margin: 0px;
+}
+.background img {
+    display: flex;
+    text-align: left;
+    align-items: initial;
+    justify-content: left;
+    margin: 32px 24px;
+    width: 60%;
+}
+div.background div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    align-items: left;
+    font-style: normal;
+    padding-left: 16px;
+    font-size: 30px;
+}
+button {
+    margin-top: 16px;
+    background-color: dimgrey;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: center;
+    color: white;
+    margin-left: initial;
+    justify-content: center;
+}
+/* Styling for the "Campus guide" Section */
+.campus-guide {
+    display: flex;
+    margin-top: 60px;
+}
+.paragraph{
+    width: 60%;
+    padding: 32px 24px;
+}
+.paragraph img{
+    width: 100%;
+}
+.snr {
+    padding: 32px 0px;
+}
+.paragraph h2 {
+    padding-bottom: 24px;
+    text-align: left;
+    margin: 32px 0px 24px 0px;
+}
+.see-more {
+    list-style-type: none;
+}
+.see-more img {
+    width: 35%;
+    height: auto;
+}
+.see-more li{
+    display: flex;
+    align-items: center;
+    padding: 16px 0px 16px 16px;
+    border: 2px solid rgba(189, 189, 189, 0.792);
+}
+.guest{
+    background-color: rgba(189, 189, 189, 0.792);
+}
+.see-more li div{
+    padding: 16px;
+}
+.see-more li a {
+    text-decoration: none;
+    color: cornflowerblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.see-more h4 {
+    font-size: larger;
+    margin-bottom: 8px;
+}
+.see-more p {
+    margin-top: 8px;
+}
+
+/* Styling for the "Start Learning" Section */
+.learn{
+    background-color: rgba(189, 189, 189, 0.792);
+    padding: 32px 72px;
+}
+.learn h2{
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 32px;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.pic{
+    background-color: white;
+    width: 30%;
+}
+.pic img{
+    height: max-content;
+    width: 100%;
+}
+.pic>p{
+    height: auto;
+    margin: 16px;
+}
+.courses{
+    color: gray;
+}
+/* Styling for the "Thesis Exhibit" Section */
+h2{
+    margin: 32px 0px;
+    text-align: center;
+}
+.video {
+    display: flex;
+    justify-content: space-evenly;
+}
+video{
+    width: 100%;
+}
+.video ul{
+    width: 35%;
+}
+.vid {
+    width: 60%;
+    margin: 0px 24px 24px 24px;
+}
+.vid .eight{
+    color: black;
+    font-size: larger;
+    margin-top: 24px;
+    margin-left: 0px;
+    font-weight: bolder;
+}
+.video li{
+    display: flex;
+}
+.list{
+    width: 40%;
+}
+.list div {
+    display: flex;
+    align-items: center;
+}
+.list div img{
+    width: 35%;
+    margin: 16px;
+}
+.fisma {
+    background-color: rgba(189, 189, 189, 0.792);
+}
+
+/* Styling for the "Footer" Section */
+footer {
+    height: 5vh;
+    padding: 16px 24px;
+    border-top: 2px solid gray;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(189, 189, 189, 0.792);
+}
+.terms a{
+    text-decoration: none;
+    color: inherit;
+    margin: 0px 4px 0px 4px;
+}
+
+/* This is the Break Point (Media Query) */
+
+@media(orientation: portrait) {
+    .mobile{
+        display: contents;
+    }
+    .desktop{
+        display: none;
+    }
+    header{
+        height: 64px;
+        width: 100%;
+    }
+    header div{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logo{
+        align-content: center;
+    }
+    .logo img{
+        width: 100%;
+        height: 90%;
+    }
+    .first {
+        width: 100%;
+        text-align: left;
+        background-color: rgba(189, 189, 189, 0.792);
+    }
+    .first img{
+        width: 100%;
+    }
+    .first h2{
+        text-align: left;
+        margin: 0px;
+    }
+    .first div{
+        padding: 32px 16px;
+        font-size: 25px;
+    }
+    button {
+        width: 90%;
+        border: none;
+    }
+    .see-more>div{
+        padding: 16px;
+        padding-bottom: 32px;
+        font-size: 30px;
+        align-items: center;
+    }
+    .see-more div div{
+        padding: 16px;
+    }
+    .see-more img{
+        height: 30vh;
+        width: 100%;
+    }
+    .see-more a{
+        text-decoration: none;
+    }
+    .third div{
+        background-color: rgba(189, 189, 189, 0.792);
+        font-size: 30px;
+        font-weight: bold;
+        border: 2px solid gray;
+        align-items: center;
+        color: rgb(43, 43, 43);
+        margin: 8px;
+        padding: 16px 16px 24px 16px;
+    }
+    .third h2{
+        font-size: 55px;
+    }
+    .third{
+        padding-bottom: 32px;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+    .last h2{
+        margin: 32px 0px 16px 0px;
+        font-size: 55px;
+    }
+    video {
+        margin-bottom: 24px;
+    }
+    footer{
+        align-items: center;
+        text-align: center;
+        font-size: 30px;
+        height: 9vh;
+        background-color: rgba(225, 218, 218, 0.792);
+    }
+}
